@@ -73,9 +73,18 @@ nav { background-color: #240a16; }
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
+.right-site-nav li a:after {
+    transition: all ease-in-out .25s;
+    background: none repeat scroll 0 0 rgb(156, 18, 110);
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+.right-site-nav li a:hover:after {
+    width: 100%;
+}
 
-.right-site-nav li a:hover,
-.right-site-nav li a:active { border-bottom: 2px solid rgb(156, 18, 110); }
 /*--------------------LOGO--------------------*/
 .logo {
     margin: auto;
@@ -203,94 +212,26 @@ footer {
     margin-bottom: 10px;
 }
 
-.price { text-align: center; }
-.supplement { text-align: right; }
+.price,
+.supplement { text-align: center; }
 
-.container {
+.container,
+.container_5columns {
     display: grid;
-    grid-template-columns: 50% 20% 20% 10%;
     font-size: 90%;
     margin-bottom: 4px;
 }
-
-/* .container:hover .btn-tiny,
-.container_5columns:hover .btn-tiny {
-    background-color: #fef3fa;
-    visibility: visible;
-    transition-delay: 0.2s;
-    transition-property: background-color, visibility;
-} */
 
 .container:hover,
 .container_5columns:hover {
     background-color:  #fef3fa;
     transition: 0.2s;
 }
-
-.container_5columns {
-    display: grid;
-    grid-template-columns: 35% 10% 15% 30% 10%;
-    font-size: 90%;
-}
-
-.btn-tiny {
-    border: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    outline:none;
-    background-color: #fff;
-}
+.container { grid-template-columns: 50% 20% 30%; }
+.container_5columns { grid-template-columns: 35% 10% 15% 40%; }
 
 .priceList__delete {
     cursor: pointer;
     font-size: 160%;
 }
 
-/* ----------SUM SECTION----------
-.addPrice {
-    flex-basis: 15%;
-}
-
-.sum__list {
-    list-style: none;
-    font-size: 75%;
-    display: flex;
-    flex-direction: column;
-}
-
-.sum {
-    text-align: center;
-    margin: 20px;
-}
-
-.sum__item {
-    display: flex;
-    align-items: flex-start;
-    border-bottom: solid 1px #ab1479;
-    padding: 5px;
-}
-
-.sum__item:hover .btn-tiny{
-    visibility: visible;
-    transition-delay: .1s;
-    transition-property: visibility;
-}
-
-.sum__descripion,
-.sum__price {
-    margin-right: 5px;
-}
-
-.sum__price {
-    color: #ab1479;
-    font-weight: 400;
-}
-
-.sum__delete {
-    cursor: pointer;
-    font-size: 150%;
-    margin: auto;
-} */
