@@ -29,7 +29,86 @@
 
         </nav>
     </header>
-
+    <section class="section_contact">
+        <div class="contact">
+            <div class="left-side">
+                <div class="contact-container-left">
+                        <form class="contact-form" method="post" action="mail.php">
+                            <div class="contactTop">
+                                <h5 class="writeToUs" >Napisz do nas</h5>
+                            </div>
+                            <div class="contactBottom">
+                                <div class="form_1">
+                                    <input class="inputName" type="text" name="name" autocomplete="off" required>
+                                    <label for="name" class="labelName">
+                                        <span class="content-name">Imię</span>
+                                    </label>
+                                </div>
+                                <div class="form_2">
+                                    <input class="inputEmail" type="email" name="email" autocomplete="off" required>
+                                    <label for="email" class="labelEmail">
+                                        <span class="content-email">Email</span>
+                                    </label>
+                                </div>
+                                <div class="form_3">
+                                    <textarea class="inputMessage" name="message" data-error-text="Musisz wypełnić pole" required></textarea>
+                                    <label for="message" class="labelMessage">
+                                        <span class="content-message">Zostaw nam wiadomość</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="submit-btn">Wyślij</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            <div class="right-side">
+                <div class="contact-container-right">
+                    <div class="upperPart">
+                        <div class="smallContainerLeft">
+                            <div class="content">
+                                <div class="contactTitle">
+                                    Adres
+                                    <p class="contactData">Reda<br>ul. Osadnicza 5b/21</p>
+                                </div>
+                                <div class="contactTitle">
+                                    Telefon
+                                    <p class="contactData">572-568-318</p>
+                                </div>
+                                <div class="contactTitle">
+                                    E-mail
+                                    <p class="contactData email">lip_mon@wp.pl
+                                        <ion-icon class="copy-btn" name="copy-outline"></ion-icon>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallContainerRight">
+                            <div class="content">
+                                <div class="contactTitle">
+                                    Godziny otwarcia
+                                    <div class="hours">
+                                        <p class="contactData">Poniedziałek - Piątek</p>
+                                        <p class="contactData">10:00 - 20:00</p>
+                                    </div>
+                                    <div class="hours">
+                                        <p class="contactData">Sobota</p>
+                                        <p class="contactData">10:00 - 14:00</p>
+                                    </div>
+                                    <div class="hours">
+                                        <p class="contactData">Niedziela</p>
+                                        <p class="contactData">Zamknięte</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomPart">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2311.519516699156!2d18.35811681588589!3d54.59483998025957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fdbab41d01fcdd%3A0x80110d759893d392!2sGabinet%20Kosmetyczny%20MoniQ!5e0!3m2!1spl!2spl!4v1602934328325!5m2!1spl!2spl" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -68,5 +147,6 @@
         </div>
     </footer>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>
