@@ -33,7 +33,7 @@
         <div class="contact">
             <div class="left-side">
                 <div class="contact-container-left">
-                        <form class="contact-form" method="post" action="mail.php">
+                        <form class="contact-form" method="post" action="">
                             <div class="contactTop">
                                 <h5 class="writeToUs" >Napisz do nas</h5>
                             </div>
@@ -148,5 +148,22 @@
     </footer>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="../js/contact.js"></script>
+
+<?php
+    if(!empty($_POST)) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $to = "mateusz.gadecki98@gmail.com";
+        $subject = "Nowy email od: < $name > , adres email: < $email > ";
+        $headers = 'From: ' . $name . ' <odpowiedz@moniq-reda.pl>' . "\r\n" .
+            'Reply-to: ' . $email . "\r\n" .
+            'X-Mailer: PHP/' . phpversion() . "\r\n" .
+            "Content-Type: text/plain; charset=utf-8";
+
+        mail($to, $subject, $message, $headers);
+    }
+
+?>
 </body>
 </html>
