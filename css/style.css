@@ -596,9 +596,7 @@ footer {
 }
 
 .submit-btn:hover,
-.submit-btn:active {
-    background-color: #8d1063;
-}
+.submit-btn:active { background-color: #8d1063; }
 
 /*--------------------GALLERY--------------------*/
 .galleryTitle {
@@ -629,10 +627,5 @@ footer {
     transition: 0.2s;
 }
 
-.my-gallery figure a img:hover {
-    opacity: 0.8;
-}
-
-.my-gallery figcaption {
-    display: none;
-  }
+.my-gallery figure a img:hover { opacity: 0.8; }
+.my-gallery figcaption { display: none; }
