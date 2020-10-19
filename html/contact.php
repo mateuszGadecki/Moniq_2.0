@@ -37,7 +37,7 @@
                             <div class="contactTop">
                                 <h5 class="writeToUs" >Napisz do nas</h5>
                             </div>
-                            <div class="contactBottom">
+                            <div class="contactCenter">
                                 <div class="form_1">
                                     <input class="inputName" type="text" name="name" autocomplete="off" required>
                                     <label for="name" class="labelName">
@@ -56,6 +56,8 @@
                                         <span class="content-message">Zostaw nam wiadomość</span>
                                     </label>
                                 </div>
+                            </div>
+                            <div class="contactBottom">
                                 <button type="submit" class="submit-btn">Wyślij</button>
                             </div>
                         </form>
