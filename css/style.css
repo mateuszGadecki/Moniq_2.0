@@ -601,4 +601,38 @@ footer {
 }
 
 /*--------------------GALLERY--------------------*/
+.galleryTitle {
+    margin-top: 30px;
+    font-size: 140%;
+    text-align: center;
+}
 
+.gallery {
+    border-bottom: 2px solid #ab1479;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 140%;
+    font-weight: 300;
+}
+
+.my-gallery {
+    margin-top: 40px;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 8px;
+}
+
+.my-gallery figure a img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 8px;
+    transition: 0.2s;
+}
+
+.my-gallery figure a img:hover {
+    opacity: 0.8;
+}
+
+.my-gallery figcaption {
+    display: none;
+  }
