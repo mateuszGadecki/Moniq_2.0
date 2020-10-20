@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <div class="navigation">
                 <div class="left-site-nav">
                     <div class="logo">
