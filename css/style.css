@@ -61,6 +61,8 @@ body {
     width: 0;
 }
 .hp_right-site-nav li a:hover:after { width: 100%; }
+/* Footer */
+.hp-footer { margin-top: 0; }
 /*--------------------LOGO--------------------*/
 .hp_logo { margin: auto; }
 .hp_q { color: rgb(156, 18, 110); }
@@ -79,6 +81,7 @@ body {
     width: 100%;
     background-color: hsla(332, 57%, 9%, 0.9);
     height: 55px;
+    z-index: 9999;
 }
 
 .sticky-nav .hp_right-site-nav { margin-top: 4px; }
@@ -94,8 +97,38 @@ body {
 /*--------------------NEWS--------------------*/
 .section_news {
     height: 100vh;
-    background-color: green;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    width: 80%;
+    margin: 0 auto;
 }
+
+.news-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    font-size: 160%;
+    font-weight: 400;
+    border-bottom: 2px solid #ab1479;
+    width: 40%;
+    margin: 0 auto 50px auto;
+}
+
+.slide { display: flex !important; }
+
+.fb-post {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.fp-prev { border-right-color: rgb(156, 18, 110) !important; }
+.fp-next { border-left-color: rgb(156, 18, 110) !important; }
+.fp-slidesNav {
+    display: flex !important;
+    justify-content: center !important;
+}
+
 /*--------------------ABOUTUS--------------------*/
 .section_aboutUs {
     height: 100vh;
