@@ -122,8 +122,8 @@ body {
     justify-content: center !important;
 }
 
-.fp-prev { border-right-color: rgb(156, 18, 110) !important; }
-.fp-next { border-left-color: rgb(156, 18, 110) !important; }
+.fp-prev { border-right-color: #5f0b43 !important; }
+.fp-next { border-left-color: #5f0b43 !important; }
 .fp-slidesNav {
     display: flex !important;
     justify-content: center !important;
@@ -132,7 +132,56 @@ body {
 /*--------------------ABOUTUS--------------------*/
 .section_aboutUs {
     height: 100vh;
-    background-color: blue;
+}
+
+.about_us {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.aboutUs_workers {
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.aboutUs_description {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+}
+
+.aboutUs_bottom_left,
+.aboutUs_bottom_right {
+    background-image: url('../img/woman.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.monikaDes,
+.paulaDes {
+    height: 100%;
+    width: 100%;
+}
+
+.monika-btn,
+.paula-btn {
+    display: block;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.monika-btn:hover,
+.paula-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.767) 0px 22px 70px 4px;
+}
+.monika-btn-img,
+.paula-btn-img {
+    border-radius: 50%;
 }
 /*--------------------TESTIMONIALS--------------------*/
 .section_testimonials {
