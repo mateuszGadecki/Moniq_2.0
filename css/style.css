@@ -41,7 +41,7 @@ body {
 .hp_right-site-nav li {
     font-size: 95%;
     display: inline-flex;
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .hp_right-site-nav li a:link,
@@ -188,9 +188,80 @@ body {
 /*--------------------TESTIMONIALS--------------------*/
 .section_testimonials {
     height: 100vh;
-    background-color: pink;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(../img/background-testimonials.jpg);;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
+.testimonials {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 35% 75%;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.testimonials_upper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.testimonials_title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    font-size: 190%;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #ab1479;
+    width: 40%;
+    margin: 0 auto 50px auto;
+}
+
+.quote {
+    font-size: 500%;
+    color: #fff;
+
+}
+
+.right_col::after {
+    content: "\201c";
+    display: flex;
+    font-size: 500%;
+    color: #fff;
+    justify-content: flex-end;
+}
+
+.opinion {
+    color: #fff;
+    font-style: italic;
+    line-height: 145%;
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.customer-pic {
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.customer-name {
+    color: #fff;
+}
 
 
 
