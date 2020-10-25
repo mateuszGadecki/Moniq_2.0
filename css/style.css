@@ -87,12 +87,24 @@ body {
 .sticky-nav .hp_right-site-nav { margin-top: 4px; }
 .sticky-nav .hp_left-site-nav { margin-top: -10px; }
 
-
-
 /*--------------------FRONT PAGE--------------------*/
 .section_frontPage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background-frontPage.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100vh;
-    background-color: orange;
+    background-attachment: fixed;
+}
+
+.frontPageTitle {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    font-size: 400%;
+    font-weight: 100;
+    color: #fff;
+    word-spacing: 4px;
+    letter-spacing: 1px;
 }
 /*--------------------NEWS--------------------*/
 .section_news {
@@ -128,7 +140,6 @@ body {
     display: flex !important;
     justify-content: center !important;
 }
-
 /*--------------------ABOUTUS--------------------*/
 .section_aboutUs {
     height: 100vh;
@@ -231,7 +242,6 @@ body {
 .quote {
     font-size: 500%;
     color: #fff;
-
 }
 
 .right_col::after {
@@ -259,21 +269,7 @@ body {
     vertical-align: middle;
 }
 
-.customer-name {
-    color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+.customer-name { color: #fff; }
 /*------------------------------REUSABLE SECTIONS/COMPONENTS------------------------------*/
 .row {
     max-width: 1140px;
@@ -398,7 +394,6 @@ footer {
 .instagram:hover { color: #c32aa3;}
 .facebook:hover { color: #1877f2; }
 .whatsapp:hover { color: #25d366; }
-
 /*--------------------SCROLLBAR--------------------*/
 .inputMessage::-webkit-scrollbar,
 .modal-content::-webkit-scrollbar { width: 12px; }
@@ -495,7 +490,6 @@ footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://i.imgur.com/csn4hKJ.jpg?1");
     background-size: cover;
 }
-
 /*--------------------SUBPAGE* PRICELIST--------------------*/
 .section_priceList { display: flex; }
 .priceList {
@@ -557,7 +551,6 @@ footer {
     cursor: pointer;
     font-size: 160%;
 }
-
 /* POP-UP */
 .pop_up {
     position: fixed;
@@ -613,7 +606,6 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
-
 /*--------------------SUBPAGE* CONTACT--------------------*/
 .section_contact {
     height: 95vh;
@@ -788,7 +780,6 @@ footer {
     bottom: -1px;
 }
 
-
 .content-name,
 .content-email,
 .content-message {
@@ -836,7 +827,6 @@ footer {
 
 .submit-btn:hover,
 .submit-btn:active { background-color: #8d1063; }
-
 /*--------------------*SUBPAGE* OURWORK--------------------*/
 .galleryTitle {
     margin-top: 30px;
