@@ -132,6 +132,7 @@ body {
 /*--------------------ABOUTUS--------------------*/
 .section_aboutUs {
     height: 100vh;
+    background-color: #f7f7f7;
 }
 
 .about_us {
@@ -173,6 +174,7 @@ body {
     border-radius: 50%;
     border: none;
     outline: none;
+    transition: .2s;
 }
 
 .monika-btn:hover,

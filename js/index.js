@@ -1,34 +1,33 @@
 const DOMstrings = {
-  navbar: document.querySelector('.hp_nav'),
-  sectionNews: document.querySelector('.section_news'),
-  monikaDes :document.querySelector('.monikaDes'),
-  paulaDes :document.querySelector('.paulaDes'),
-  aboutUsTopLeft :document.querySelector('.aboutUs_top_left'),
-  aboutUsTopRight :document.querySelector('.aboutUs_top_right'),
-  monikaBtn :document.querySelector('.monika-btn'),
-  paulaBtn :document.querySelector('.paula-btn'),
+    navbar: document.querySelector('.hp_nav'),
+    sectionNews: document.querySelector('.section_news'),
+    frontPage: document.querySelector('.section_frontPage'),
+    monikaDes :document.querySelector('.monikaDes'),
+    paulaDes :document.querySelector('.paulaDes'),
+    aboutUsTopLeft :document.querySelector('.aboutUs_top_left'),
+    aboutUsTopRight :document.querySelector('.aboutUs_top_right'),
+    monikaBtn :document.querySelector('.monika-btn'),
+    paulaBtn :document.querySelector('.paula-btn'),
 }
 
 // Sticky Navigation
 window.onscroll = function() {stickyNavigation()};
-const sectionNewsTop = DOMstrings.sectionNews.offsetTop;
+const frontPageHeight = DOMstrings.frontPage.offsetHeight - 10;
 
 function stickyNavigation() {
-  if (window.pageYOffset >= sectionNewsTop) {
+    if (window.pageYOffset >= frontPageHeight) {
     DOMstrings.navbar.classList.add("sticky-nav");
-  } else {
+} else {
     DOMstrings.navbar.classList.remove("sticky-nav");
-  }
+}
 };
-
 // AboutUs section
 
 const gradient = 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))';
 const shadow = 'rgba(0, 0, 0, 0.767) 0px 22px 70px 4px';
-
 // Create Toogle hide and show description, gradient etc..
-const displayDesLeft = () => {
-  if (DOMstrings.aboutUsTopLeft.style.backgroundImage === `${gradient}`) {
+const toggleLeft = () => {
+if (DOMstrings.aboutUsTopLeft.style.backgroundImage === `${gradient}`) {
     // Return to the initial state
     DOMstrings.monikaDes.style.backgroundImage = ``;
     DOMstrings.aboutUsTopLeft.style.backgroundImage = ``;
@@ -37,8 +36,10 @@ const displayDesLeft = () => {
     const desMonika = '<p></p>'
     DOMstrings.aboutUsTopLeft.innerHTML = titleMonika;
     DOMstrings.monikaDes.innerHTML = desMonika;
-
-  } else {
+    // Animation
+    DOMstrings.monikaDes.classList.remove('animate__fadeIn');
+    DOMstrings.aboutUsTopLeft.classList.remove('animate__fadeIn');
+} else {
     // Adding gradient on picture and boxShadow on button
     DOMstrings.monikaDes.style.backgroundImage = `${gradient}`;
     DOMstrings.aboutUsTopLeft.style.backgroundImage = `${gradient}`;
@@ -48,6 +49,9 @@ const displayDesLeft = () => {
     const desMonika = '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequatur minima totam neque impedit saepe molestiae corporis blanditiis. Nesciunt neque laboriosam iste sapiente illo ex eveniet animi molestias dolores voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequatur minima totam neque impedit saepe molestiae corporis blanditiis. Nesciunt neque laboriosam iste sapiente illo ex eveniet animi molestias dolores voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequatur minima totam neque impedit saepe molestiae corporis blanditiis. Nesciunt neque laboriosam iste sapiente illo ex eveniet animi molestias dolores voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequatur minima totam neque impedit saepe molestiae corporis blanditiis. Nesciunt neque laboriosam iste sapiente illo ex eveniet animi molestias dolores voluptatum?</p>'
     DOMstrings.aboutUsTopLeft.innerHTML = titleMonika;
     DOMstrings.monikaDes.innerHTML = desMonika;
+    // Animation
+    DOMstrings.monikaDes.classList.add('animate__fadeIn');
+    DOMstrings.aboutUsTopLeft.classList.add('animate__fadeIn');
     // Remove description, title, boxShadow, gradient on picture from the adjacent section
     DOMstrings.paulaDes.style.backgroundImage = ``;
     DOMstrings.aboutUsTopRight.style.backgroundImage = ``;
@@ -56,11 +60,13 @@ const displayDesLeft = () => {
     const desPaula = '<p></p>'
     DOMstrings.aboutUsTopRight.innerHTML = titlePaula;
     DOMstrings.paulaDes.innerHTML = desPaula;
-  }
+    // Animation
+    DOMstrings.paulaDes.classList.remove('animate__fadeIn');
+    DOMstrings.aboutUsTopRight.classList.remove('animate__fadeIn');
+}
 };
-
-const displayDesRight = () => {
-  if (DOMstrings.aboutUsTopRight.style.backgroundImage === `${gradient}`) {
+const toggleRight = () => {
+if (DOMstrings.aboutUsTopRight.style.backgroundImage === `${gradient}`) {
     // Return to the initial state
     DOMstrings.paulaDes.style.backgroundImage = ``;
     DOMstrings.aboutUsTopRight.style.backgroundImage = ``;
@@ -69,7 +75,10 @@ const displayDesRight = () => {
     const desPaula = '<p></p>'
     DOMstrings.aboutUsTopRight.innerHTML = titlePaula;
     DOMstrings.paulaDes.innerHTML = desPaula;
-  } else {
+    // Animation
+    DOMstrings.paulaDes.classList.remove('animate__fadeIn');
+    DOMstrings.aboutUsTopRight.classList.remove('animate__fadeIn');
+} else {
     // Adding gradient on picture and boxShadow on button
     DOMstrings.paulaDes.style.backgroundImage = `${gradient}`;
     DOMstrings.aboutUsTopRight.style.backgroundImage = `${gradient}`;
@@ -79,7 +88,9 @@ const displayDesRight = () => {
     const desPaula = '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequatur minima totam neque impedit saepe molestiae corporis blanditiis. Nesciunt neque laboriosam iste sapiente illo ex eveniet animi molestias dolores voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequatur minima totam neque impedit saepe molestiae corporis blanditiis. Nesciunt neque laboriosam iste sapiente illo ex eveniet animi molestias dolores voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequatur minima totam neque impedit saepe molestiae corporis blanditiis. Nesciunt neque laboriosam iste sapiente illo ex eveniet animi molestias dolores voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus consequatur minima totam neque impedit saepe molestiae corporis blanditiis. Nesciunt neque laboriosam iste sapiente illo ex eveniet animi molestias dolores voluptatum?</p>'
     DOMstrings.aboutUsTopRight.innerHTML = titlePaula;
     DOMstrings.paulaDes.innerHTML = desPaula;
-
+    // Animation
+    DOMstrings.paulaDes.classList.add('animate__fadeIn');
+    DOMstrings.aboutUsTopRight.classList.add('animate__fadeIn');
     // Remove description, title, boxShadow, gradient on picture from the adjacent section
     DOMstrings.monikaDes.style.backgroundImage = ``;
     DOMstrings.aboutUsTopLeft.style.backgroundImage = ``;
@@ -88,9 +99,12 @@ const displayDesRight = () => {
     const desMonika = '<p></p>'
     DOMstrings.aboutUsTopLeft.innerHTML = titleMonika;
     DOMstrings.monikaDes.innerHTML = desMonika;
-  }
-
+    // Animation
+    DOMstrings.monikaDes.classList.remove('animate__fadeIn');
+    DOMstrings.aboutUsTopLeft.classList.remove('animate__fadeIn');
+}
 };
+DOMstrings.monikaBtn.addEventListener('click', toggleLeft);
+DOMstrings.paulaBtn.addEventListener('click', toggleRight);
 
-DOMstrings.monikaBtn.addEventListener('click', displayDesLeft);
-DOMstrings.paulaBtn.addEventListener('click', displayDesRight);
+
