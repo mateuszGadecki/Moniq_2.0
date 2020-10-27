@@ -11,21 +11,25 @@
 .right { margin-left: 0; }
 .price,
 .supplement { text-align: right; }
-
-
 }
 
 /* Small tablet to big tablet: from 768 to 1023px */
 @media only screen and (max-width: 1023px) {
 
 }
-
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
 /*----------Subpage PriceList----------*/
 .priceList {
     font-size: 90%;
     margin: 0 8%;
+}
+/*----------Subpage OurWork----------*/
+.my-gallery { column-count: 2; }
+.my-gallery figure a img {
+    width: 90% !important;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 }
 
