@@ -1,4 +1,4 @@
-/* Big tablet to 1200px (widths smaller than the 1140px) */
+/*--------------- Big tablet to 1200px (widths smaller than the 1140px) ---------------*/
 @media only screen and (max-width: 1200px) {
 /*----------Subpage PriceList----------*/
 .priceList {
@@ -14,8 +14,15 @@
 /*----------Subpage Contact----------*/
 .map { width: 90%; }
 .submit-btn {top: 0%;}
+/*----------Subpage Offer----------*/
+.offer_container {
+    width: 261px;
+    height: 315px;
 }
-/* Small tablet to big tablet: from 768 to 1023px */
+.offer_row { grid-template-rows: 340px; }
+.modal-content { margin: 10% auto; }
+}
+/*--------------- Small tablet to big tablet: from 768 to 1023px ---------------*/
 @media only screen and (max-width: 1023px) {
 /*----------Subpage Contact----------*/
 .section_contact { height: 170vh; }
@@ -25,8 +32,21 @@
     grid-template-rows: auto;
     justify-content: center;
 }
+/*----------Subpage Offer----------*/
+.offer_container {
+    width: 174px;
+    height: 210px;
 }
-/* Small phones to small tablets: from 481px to 767px */
+.offer_row { grid-template-rows: 240px; }
+.btn-pop-up {
+    font-size: 85%;
+    font-weight: 300;
+    padding: 2.5px 5px;
+}
+.offer_title { font-size: 90%; }
+
+}
+/*--------------- Small phones to small tablets: from 481px to 767px ---------------*/
 @media only screen and (max-width: 767px) {
 /*----------Subpage PriceList----------*/
 .priceList {
@@ -49,8 +69,25 @@
     grid-template-columns: 90%;
     grid-template-rows: 60% 60%;
 }
+/*----------Subpage Offer----------*/
+.offer_container {
+    width: 290px;
+    height: 350px;
 }
-/* Small phones: from 0 to 480px */
+.offer_row {
+    grid-template-rows: 380px 380px 380px;
+    grid-template-columns: 100%;
+    margin-bottom: 0;
+}
+.offer_title { font-size: 100%; }
+.btn-pop-up {
+    font-size: 90%;
+    font-weight: 300;
+    padding: 3.75px 7.5px;
+}
+.modal-content { margin: 15% auto; }
+}
+/*--------------- Small phones: from 0 to 480px ---------------*/
 @media only screen and (max-width: 480px) {
 /*----------Subpage PriceList----------*/
 .priceList {
