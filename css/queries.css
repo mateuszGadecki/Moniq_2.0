@@ -1,5 +1,7 @@
 /*--------------- Big tablet to 1200px (widths smaller than the 1140px) ---------------*/
 @media only screen and (max-width: 1200px) {
+/*--------------------Home Page--------------------*/
+/*--------------------Subpages--------------------*/
 /*----------Subpages navigation----------*/
 .right-site-nav { flex-basis: 80%; }
 .left-site-nav { flex-basis: 20%; }
@@ -24,9 +26,14 @@
 }
 .offer_row { grid-template-rows: 340px; }
 .modal-content { margin: 10% auto; }
+/*----------Footer on subpages and Home page----------*/
+.left-footer { margin: 0 0 0 10%; }
+.right-footer { margin: 0 10% 0 0; }
 }
 /*--------------- Small tablet to big tablet: from 768 to 1023px ---------------*/
 @media only screen and (max-width: 1023px) {
+/*--------------------Home Page--------------------*/
+/*--------------------Subpages--------------------*/
 /*----------Subpages navigation----------*/
 .right-site-nav li {
     font-size: 85%;
@@ -53,10 +60,14 @@
     padding: 2.5px 5px;
 }
 .offer_title { font-size: 90%; }
-
+/*----------Footer on subpages and Home page----------*/
+.left-footer { flex-basis: 60%; }
+.right-footer { flex-basis: 40%; }
 }
 /*--------------- Small phones to small tablets: from 481px to 767px ---------------*/
 @media only screen and (max-width: 767px) {
+/*--------------------Home Page--------------------*/
+/*--------------------Subpages--------------------*/
 /*----------Subpages navigation----------*/
 .full-width-navi { display: none; }
 .mobile-navi { visibility: visible; }
@@ -105,9 +116,23 @@
     padding: 3.75px 7.5px;
 }
 .modal-content { margin: 15% auto; }
+/*----------Footer on subpages and Home page----------*/
+.footer-links li {
+    display: block;
+    margin-top: 5px;
+}
+.footer-socials li { margin-right: 20px; }
+.left-footer,
+.right-footer { font-size: 90%; }
+.copyright {
+    margin-top: 10px;
+    font-size: 70%;
+}
 }
 /*--------------- Small phones: from 0 to 480px ---------------*/
 @media only screen and (max-width: 480px) {
+/*--------------------Home Page--------------------*/
+/*--------------------Subpages--------------------*/
 /*----------Subpage PriceList----------*/
 .priceList {
     font-size: 75%;
@@ -117,4 +142,6 @@
 .section_contact { height: 300vh; }
 .submit-btn {top: 30%;}
 .writeToUs { font-size: 110%; }
+/*----------Footer on subpages and Home page----------*/
+.footer-socials li { margin-right: 12px; }
 }

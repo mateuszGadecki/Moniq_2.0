@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -103,12 +104,6 @@
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
         <footer class="section fp-auto-height hp-footer">
             <div class="links">
                 <div class="left-footer">
@@ -156,5 +151,27 @@
             scrollingSpeed: 1000,
             });
     </script>
+    <script>
+        window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '633254237346662',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v8.0',
+    });
+    FB.api(
+        '/https://graph.facebook.com/{103584441554464}/accounts?fields=name,access_token&access_token=EAAIZC8P3em2YBAFwL9ylwu7bTtkVgTuNhSw8VkAjoP7ul3geNLjzWPkf5E1IE1jZC0ZBTU3b8Ispf2j03V9tqLKkRk0ehB3jdexUwo5hOpbeMZC2gUG506fGscsJ3ZCM0ufpXG4acvmbihkM1mc93Svbt1PYDu8RyIjYuqAkGugZDZD/feed',
+        'GET',
+    {},
+    function(response) {
+        console.log(response);
+    }
+    );
+    };
+    </script>
 </body>
 </html>
+
+
+<!-- /https://graph.facebook.com/{103584441554464}/accounts?fields=name,access_token&access_token=EAAIZC8P3em2YBANr9X6XyCtshCNPxXggnFjBa1dEvCLbVB2CKKOdqvC19ocsQfbRAdRovieZCyLMi46nfnA4KUh9qgig6WWrTx9J2q00dwBJsRFbiZBM8XgCMvrhZA63eQZCWrmkP0v0bJ7HsbRl0KTRZCnJkwVCHWZA0sSUwelgrERYRM00zvNkYgRos75wdWEXnZA9ZCdzCSQZDZD/feed',
+  'GET' -->
