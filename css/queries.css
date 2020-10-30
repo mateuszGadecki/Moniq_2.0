@@ -1,5 +1,8 @@
 /*--------------- Big tablet to 1200px (widths smaller than the 1140px) ---------------*/
 @media only screen and (max-width: 1200px) {
+/*----------Subpages navigation----------*/
+.right-site-nav { flex-basis: 80%; }
+.left-site-nav { flex-basis: 20%; }
 /*----------Subpage PriceList----------*/
 .priceList {
     font-size: 110%;
@@ -24,6 +27,12 @@
 }
 /*--------------- Small tablet to big tablet: from 768 to 1023px ---------------*/
 @media only screen and (max-width: 1023px) {
+/*----------Subpages navigation----------*/
+.right-site-nav li {
+    font-size: 85%;
+    display: inline-flex;
+    margin-right: 15px;
+}
 /*----------Subpage Contact----------*/
 .section_contact { height: 170vh; }
 .map { margin-top: 10%; }
@@ -48,6 +57,16 @@
 }
 /*--------------- Small phones to small tablets: from 481px to 767px ---------------*/
 @media only screen and (max-width: 767px) {
+/*----------Subpages navigation----------*/
+.full-width-navi { display: none; }
+.mobile-navi { visibility: visible; }
+.right-site-nav li {
+    width: 100%;
+    font-size: 85%;
+    display: flex;
+    margin-top: 5px;
+}
+.right-site-nav { display: flex; }
 /*----------Subpage PriceList----------*/
 .priceList {
     font-size: 90%;

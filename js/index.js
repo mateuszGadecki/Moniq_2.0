@@ -107,4 +107,3 @@ if (DOMstrings.aboutUsTopRight.style.backgroundImage === `${gradient}`) {
 DOMstrings.monikaBtn.addEventListener('click', toggleLeft);
 DOMstrings.paulaBtn.addEventListener('click', toggleRight);
 
-

@@ -292,6 +292,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
 }
 
 .right-site-nav li {
@@ -317,6 +318,20 @@ body {
     width: 0;
 }
 .right-site-nav li a:hover:after { width: 100%; }
+/*--------------------MOBILE NAVIGATION--------------------*/
+.mobile-navi {
+    cursor: pointer;
+    position: absolute;
+    top: 22px;
+    right: 3%;
+    visibility: hidden;
+}
+.burger-btn {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 140%;
+}
 /*--------------------LOGO--------------------*/
 .logo { margin: auto; }
 .q { color: rgb(156, 18, 110); }
@@ -490,6 +505,61 @@ footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://i.imgur.com/csn4hKJ.jpg?1");
     background-size: cover;
 }
+/* POP-UP */
+.pop_up {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-peeling,
+.modal-diamond,
+.modal-mesotherapy { display: none; }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-title {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 120%;
+}
+
+.modal-description {
+    margin: 15px 5%;
+    line-height: 145%;
+}
+
+.btn-close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+.btn-close:hover,
+.cbtn-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 /*--------------------SUBPAGE* PRICELIST--------------------*/
 .section_priceList { display: flex; }
 .priceList {
@@ -550,61 +620,6 @@ footer {
 .priceList__delete {
     cursor: pointer;
     font-size: 160%;
-}
-/* POP-UP */
-.pop_up {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modal-peeling,
-.modal-diamond,
-.modal-mesotherapy { display: none; }
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    height: 80%;
-    overflow-y: auto;
-    position: relative;
-}
-
-.modal-title {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    font-size: 120%;
-}
-
-.modal-description {
-    margin: 15px 5%;
-    line-height: 145%;
-}
-
-.btn-close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    right: 1%;
-    top: 1%;
-}
-
-.btn-close:hover,
-.cbtn-close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
 /*--------------------SUBPAGE* CONTACT--------------------*/
 .section_contact {
