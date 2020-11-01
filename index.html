@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/queries.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <div id="fullpage">
         <header class="section">
             <div class="section_frontPage">
-                <nav class="hp_nav">
+                <nav id="nav" class="hp_nav js-nav">
                     <div class="hp_navigation">
                         <div class="hp_left-site-nav">
                             <div class="hp_logo">
@@ -23,12 +23,13 @@
                             </div>
                         </div>
                         <div class="hp_right-site-nav">
-                            <ul>
+                            <ul class="full-width-navi animate__animated">
                                 <li><a href="html/priceList.html">Cennik</a></li>
                                 <li><a href="html/offer.html">Oferta</a></li>
                                 <li><a href="html/ourWork.html">Nasze prace</a></li>
                                 <li><a href="html/contact.php">Kontakt</a></li>
                             </ul>
+                            <a class="mobile-navi"><ion-icon class="burger-btn" name="menu"></ion-icon></a>
                         </div>
                     </div>
                 </nav>
@@ -42,11 +43,24 @@
                 <div class="news-title">Aktualności</div>
                 <div class="facebook-news">
                     <div class="slide">
-                        <div data-slidr="one" class="fb-post" data-href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2665989280309093" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2665989280309093" class="fb-xfbml-parse-ignore"><p>Działamy 💪❤️</p>Opublikowany przez <a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/">MoniQ Reda</a>&nbsp;<a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2665989280309093">Wtorek, 7 lipca 2020</a></blockquote>
+                        <div data-slidr="one" class="fb-post" data-href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2761648967409790" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2761648967409790" class="fb-xfbml-parse-ignore"><p>I kolejna Pani zaufała naszej Pauli 🥰 makijaż permanentny ombre brows💕</p>Opublikowany przez <a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/">MoniQ Reda</a>&nbsp;<a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2761648967409790">Środa, 28 października 2020</a></blockquote>
                         </div>
                     </div>
                     <div class="slide">
-                        <div data-slidr="two" class="fb-post" data-href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2745588285682525" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2745588285682525" class="fb-xfbml-parse-ignore"><p>Wyk Paula❤️</p>Opublikowany przez <a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/">MoniQ Reda</a>&nbsp;<a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2745588285682525">Sobota, 10 października 2020</a></blockquote>
+                        <div data-slidr="two" class="fb-post" href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2745588285682525" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2745588285682525" class="fb-xfbml-parse-ignore"><p>Wyk Paula❤️</p>Opublikowany przez <a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/">MoniQ Reda</a>&nbsp;<a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2745588285682525">Sobota, 10 października 2020</a></blockquote>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div data-slidr="three" class="fb-post" href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2730273820547305" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2730273820547305" class="fb-xfbml-parse-ignore"><p>Makijaz okolicznościowy 😍</p>Opublikowany przez <a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/">MoniQ Reda</a>&nbsp;<a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2730273820547305">Wtorek, 22 września 2020</a></blockquote>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div data-slidr="four" class="fb-post" href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2728397300734957" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2728397300734957" class="fb-xfbml-parse-ignore"><p>Ombre brewki❤️</p>Opublikowany przez <a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/">MoniQ Reda</a>&nbsp;<a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2728397300734957">Niedziela, 20 września 2020</a></blockquote>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div data-slidr="five" class="fb-post" href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2671035749804446" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2671035749804446" class="fb-xfbml-parse-ignore"><p>Microblading
+                        Dziękuję za zaufanie Ada ❤️</p>Opublikowany przez <a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/">MoniQ Reda</a>&nbsp;<a href="https://www.facebook.com/moniq.gabinet.kosmetyczny/posts/2671035749804446">Poniedziałek, 13 lipca 2020</a></blockquote>
                         </div>
                     </div>
                 </div>
@@ -144,34 +158,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
     <script>
         new fullpage('#fullpage', {
-            autoScrolling: 'true',
-            fitToSection: 'false',
-            scrollBar: 'true',
-            slidesNavigation: 'true',
-            scrollingSpeed: 1000,
+            css3: false,
+            autoScrolling: true,
+            fitToSection: true,
+            scrollBar: true,
+            slidesNavigation: true,
+            verticalCentered: true,
+            responsiveWidth: 768,
+            scrollingSpeed: 900,
             });
-    </script>
-    <script>
-        window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '633254237346662',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v8.0',
-    });
-    FB.api(
-        '/https://graph.facebook.com/{103584441554464}/accounts?fields=name,access_token&access_token=EAAIZC8P3em2YBAFwL9ylwu7bTtkVgTuNhSw8VkAjoP7ul3geNLjzWPkf5E1IE1jZC0ZBTU3b8Ispf2j03V9tqLKkRk0ehB3jdexUwo5hOpbeMZC2gUG506fGscsJ3ZCM0ufpXG4acvmbihkM1mc93Svbt1PYDu8RyIjYuqAkGugZDZD/feed',
-        'GET',
-    {},
-    function(response) {
-        console.log(response);
-    }
-    );
-    };
     </script>
 </body>
 </html>
-
-
-<!-- /https://graph.facebook.com/{103584441554464}/accounts?fields=name,access_token&access_token=EAAIZC8P3em2YBANr9X6XyCtshCNPxXggnFjBa1dEvCLbVB2CKKOdqvC19ocsQfbRAdRovieZCyLMi46nfnA4KUh9qgig6WWrTx9J2q00dwBJsRFbiZBM8XgCMvrhZA63eQZCWrmkP0v0bJ7HsbRl0KTRZCnJkwVCHWZA0sSUwelgrERYRM00zvNkYgRos75wdWEXnZA9ZCdzCSQZDZD/feed',
-  'GET' -->

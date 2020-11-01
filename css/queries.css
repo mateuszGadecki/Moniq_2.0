@@ -1,6 +1,8 @@
 /*--------------- Big tablet to 1200px (widths smaller than the 1140px) ---------------*/
 @media only screen and (max-width: 1200px) {
 /*--------------------Home Page--------------------*/
+/*----------Testimonials----------*/
+.testimonials_title { width: 50%; }
 /*--------------------Subpages--------------------*/
 /*----------Subpages navigation----------*/
 .right-site-nav { flex-basis: 80%; }
@@ -33,6 +35,25 @@
 /*--------------- Small tablet to big tablet: from 768 to 1023px ---------------*/
 @media only screen and (max-width: 1023px) {
 /*--------------------Home Page--------------------*/
+/*----------Navigation----------*/
+.hp_right-site-nav { flex-basis: 75%; }
+.hp_left-site-nav { flex-basis: 25%; }
+.hp_right-site-nav {
+    font-size: 85%;
+    margin-left: 15px;
+    margin-right: 0px;
+}
+/*----------News----------*/
+.slide {
+    transform: scale(0.8);
+    margin: auto auto !important;
+}
+/*----------Testimonials----------*/
+.testimonials_title { font-size: 170%; width: 70%; }
+.opinion { font-size: 90%; }
+.customer-pic { height: 50px; }
+.testimonials_upper { grid-template-rows: 80% 20%; }
+
 /*--------------------Subpages--------------------*/
 /*----------Subpages navigation----------*/
 .right-site-nav li {
@@ -67,6 +88,38 @@
 /*--------------- Small phones to small tablets: from 481px to 767px ---------------*/
 @media only screen and (max-width: 767px) {
 /*--------------------Home Page--------------------*/
+/*----------Navigation----------*/
+.hp_right-site-nav li {
+    width: 100%;
+    font-size: 95%;
+    display: flex;
+    margin-top: 10px;
+}
+/*----------Front Page----------*/
+.frontPageTitle { font-size: 300%; }
+/*----------News----------*/
+.news-title { width: 60%; }
+.slide {
+    margin-top: -40px !important;
+    transform: scale(0.7);
+}
+.section_news {
+    width: 100% !important;
+    height: 80vh !important;
+}
+/*----------Testimonials----------*/
+.testimonials_title {
+    font-size: 140%;
+    width: 80%;
+}
+.section_testimonials { height: 120vh !important; }
+.testimonials { grid-template-rows: 25% 75%; }
+.testimonials_upper { grid-template-rows: 75% 25%; }
+.columns { grid-template-columns: 100%; }
+.quote,
+.right_col::after { font-size: 300%; }
+.opinion { font-size: 80%; }
+.customer-pic { height: 40px; }
 /*--------------------Subpages--------------------*/
 /*----------Subpages navigation----------*/
 .full-width-navi { display: none; }
@@ -132,6 +185,18 @@
 /*--------------- Small phones: from 0 to 480px ---------------*/
 @media only screen and (max-width: 480px) {
 /*--------------------Home Page--------------------*/
+body { font-size: 90%; }
+/*----------Front Page----------*/
+.frontPageTitle { font-size: 250%; }
+/*----------News----------*/
+.section_news { height: 100vh !important; }
+/*----------Testimonials----------*/
+.testimonials_title {
+    font-size: 130%;
+    width: 90%;
+}
+.section_testimonials { height: 150vh !important; }
+.opinion { margin-top: 10px; }
 /*--------------------Subpages--------------------*/
 /*----------Subpage PriceList----------*/
 .priceList {

@@ -14,8 +14,11 @@ body {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    width: 100% !important;
 }
+
+
 
 /*------------------------------HOME PAGE------------------------------*/
 /*--------------------Navigation--------------------*/
@@ -27,8 +30,8 @@ body {
     margin: 0 10% 0 10%;
 }
 
-.hp_right-site-nav,
-.hp_left-site-nav { flex-basis: 50%; }
+.hp_right-site-nav { flex-basis: 60%; }
+.hp_left-site-nav { flex-basis: 40%; }
 
 
 .hp_right-site-nav {
@@ -119,7 +122,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 50px;
     font-size: 160%;
     font-weight: 400;
     border-bottom: 2px solid #ab1479;
@@ -127,7 +129,12 @@ body {
     margin: 0 auto 50px auto;
 }
 
-.slide { display: flex !important; }
+.slide {
+    display: flex !important;
+    transform: scale(0.9);
+}
+
+.facebook-news { width: 100%; }
 
 .fb-post {
     display: flex !important;
@@ -231,7 +238,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 50px;
-    font-size: 190%;
+    font-size: 185%;
     font-weight: 300;
     color: #fff;
     border-bottom: 2px solid #ab1479;
@@ -326,6 +333,7 @@ body {
     right: 3%;
     visibility: hidden;
 }
+
 .burger-btn {
     display: flex;
     align-items: center;
@@ -873,3 +881,7 @@ footer {
 
 .my-gallery figure a img:hover { opacity: 0.8; }
 .my-gallery figcaption { display: none; }
+
+
+
+

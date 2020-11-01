@@ -8,6 +8,11 @@ const DOMstrings = {
     aboutUsTopRight :document.querySelector('.aboutUs_top_right'),
     monikaBtn :document.querySelector('.monika-btn'),
     paulaBtn :document.querySelector('.paula-btn'),
+    target : document.querySelector('.full-width-navi'),
+    burgerBtn : document.querySelector('.burger-btn'),
+    navi : document.querySelector('.js-nav'),
+    mobileNavi : document.querySelector('.mobile-navi'),
+    navID: document.querySelector('#nav')
 }
 
 // Sticky Navigation
@@ -17,10 +22,55 @@ const frontPageHeight = DOMstrings.frontPage.offsetHeight - 10;
 function stickyNavigation() {
     if (window.pageYOffset >= frontPageHeight) {
     DOMstrings.navbar.classList.add("sticky-nav");
+    if (DOMstrings.navID.classList.contains('sticky-nav')) {
+    DOMstrings.mobileNavi.style.top = '15px';
+    }
 } else {
     DOMstrings.navbar.classList.remove("sticky-nav");
+    DOMstrings.mobileNavi.style.top = '22px';
 }
 };
+
+// Mobile navigation
+// A function that hide navigation
+let slideUp = (nav, target, duration, btn) => {
+    target.style.display = 'none';
+    target.classList.remove("animate__fadeInUp");
+    target.classList.remove("animate__faster");
+    if (DOMstrings.navID.classList.contains('sticky-nav')) {
+        nav.style.height = '55px';
+        nav.style.transitionProperty = 'height';
+        nav.style.transitionDuration = duration + 'ms';
+    }
+    btn.setAttribute('name', 'menu');
+};
+// A function that shows navigation
+let slideDown = (nav, target, duration, btn) => {
+    let display = window.getComputedStyle(target).display;
+    if (display === 'none') { display = 'block'; }
+    target.style.display = display;
+    target.classList.add("animate__fadeInUp");
+    target.classList.add("animate__faster");
+    if (DOMstrings.navID.classList.contains('sticky-nav')) {
+        nav.style.height = '150px';
+        nav.style.transitionProperty = 'height';
+        nav.style.transitionDuration = duration + 'ms';
+    }
+    btn.setAttribute('name', 'close');
+};
+// Toggle between show and hide navigation
+let slideToggle = (nav, target, duration, btn) => {
+    if (window.getComputedStyle(target).display === 'none') {
+        return slideDown(nav, target, duration, btn);
+    } else {
+        return slideUp(nav, target, duration, btn);
+    }
+};
+
+DOMstrings.mobileNavi.addEventListener('click', () => {
+    slideToggle(DOMstrings.navi, DOMstrings.target, 300, DOMstrings.burgerBtn);
+});
+
 // AboutUs section
 
 const gradient = 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))';
