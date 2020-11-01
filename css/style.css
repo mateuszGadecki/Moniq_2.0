@@ -66,6 +66,12 @@ body {
 .hp_right-site-nav li a:hover:after { width: 100%; }
 /* Footer */
 .hp-footer { margin-top: 0; }
+.hp-mobile-navi { right: 10% !important; }
+/* Animation */
+.nav_1_animation { --animate-duration: 0.5s; }
+.nav_2_animation { --animate-duration: 0.6s; }
+.nav_3_animation { --animate-duration: 0.7s; }
+.nav_4_animation { --animate-duration: 0.8s; }
 /*--------------------LOGO--------------------*/
 .hp_logo { margin: auto; }
 .hp_q { color: rgb(156, 18, 110); }
